@@ -1,7 +1,7 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import LogoImage from '@/Assets/images/Logo.png';
 import MeetingImage from '@/Assets/images/meeting.png';
 import RoomImage from '@/Assets/images/room.jpg';
@@ -26,6 +26,7 @@ import Vector1 from '@/Assets/images/Vector1.png';
 import Vector2 from '@/Assets/images/Vector2.png';
 import { PlusIcon } from 'lucide-react';
 
+
 const Home: React.FC = () => {
   return (
     <>
@@ -47,8 +48,9 @@ const Home: React.FC = () => {
       `}</style>
 
       {/*(Navigation Bar) */}
-      <nav className="relative flex justify-between items-center p-3 m-8">
-        <div className="absolute left-1/2 transform -translate-x-[74%] flex space-x-7">
+      <nav className=" top-0 left-0 w-full  flex justify-between items-center p-3 m-8">
+
+        <div className="absolute left-1/2 transform -translate-x-[74%] space-x-7 px-6 py-3 z-50">
             <a 
   href="#section2" 
   className="nav-items text-white"
@@ -177,7 +179,7 @@ const Home: React.FC = () => {
 
 {/*(featured Content) */}
 <div className="relative group transition-all duration-300 ">
-  <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(110,56,147,0.9),rgba(50,50,147,0.2))] transition-all duration-300 mt-[-100px]">
+  <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-300 mt-[-100px]">
     <div className="absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
     
       <Image src={FeatureImage} alt="Feature image" className="w-full h-full object-cover" />
@@ -372,25 +374,69 @@ const Home: React.FC = () => {
         <button className='text-[16px] font-semibold border w-[160px] h-[56px] border-white/50 rounded-full hover:border-white/20 ml-[800px] mt-[30px]'>Read full article</button>
         <div className='border-b border-white/20 w-full ml-[80px] mt-[180px]'></div>
 
-        <div className='grid grid-cols-4 gap-96 ml-[80px] mt-[50px]'>
-          <p className='text-[20px] text-nowrap'>Insights into Neuform’s design process,<br/> strategies, and methodologies that drive<br/> exceptional results.</p>
-          <p className='text-[20px] text-nowrap'>Introduction to Neuform’s recent<br/>groundbreaking projects.</p>
-          <p className='text-[20px] text-nowrap'>Expert tips or strategies shared by<br/> Neuform’s UX designers for creating<br/>impactful user journeys.</p>
-          <p className='text-[20px] text-nowrap'>Client feedback or reviews on the impact<br/> of Neuform’s innovative solutions.</p>
+        
+       <div className="relative overflow-hidden w-full bg-[rgb(17,5,1)] text-white py-10 mt-12">
+  <motion.div
+    className="overflow-hidden" // Ensures smooth clipping
+    whileHover={{ x: 0 }} // No movement on the wrapper
+  >
+    <motion.div
+      className="flex space-x-40 w-[200%] items-center"
+      initial={{ x: "0%" }} // Stay still initially
+      whileHover={{ x: "-100%" }} // Move on hover
+      transition={{
+        duration: 15, // Smooth and slow movement
+        ease: "linear",
+      }}
+    >
+      {[...Array(2)].map((_, index) => (
+        <div key={index} className="flex space-x-40">
+          {/* Section 1 */}
+          <div className="w-[500px]">
+            <p className="text-[24px] font-medium leading-tight">
+              Insights into Neuform’s design process, strategies, and methodologies that drive exceptional results.
+            </p>
+            <h3 className="text-[14px] text-white/50 mt-4">Testimonials</h3>
+          </div>
+
+          {/* Section 2 */}
+          <div className="w-[500px]">
+            <p className="text-[24px] font-medium leading-tight">
+              Introduction to Neuform’s recent groundbreaking projects.
+            </p>
+            <h3 className="text-[14px] text-white/50 mt-4">Testimonials</h3>
+          </div>
+
+          {/* Section 3 */}
+          <div className="w-[500px]">
+            <p className="text-[24px] font-medium leading-tight">
+              Expert tips or strategies shared by Neuform’s UX designers for creating impactful user journeys.
+            </p>
+            <h3 className="text-[14px] text-white/50 mt-4">Testimonials</h3>
+          </div>
+
+          {/* Section 4 */}
+          <div className="w-[500px]">
+            <p className="text-[24px] font-medium leading-tight">
+              Client feedback or reviews on the impact of Neuform’s innovative solutions.
+            </p>
+            <h3 className="text-[14px] text-white/50 mt-4">Testimonials</h3>
+          </div>
         </div>
-        <h3 className='text-[14px] text-white/50 ml-[80px] mt-4'>Testimonials</h3>
-        <h3 className='text-[14px] text-white/50 ml-[535px] mt-[-50px]'>Testimonials</h3>
-        <h3 className='text-[14px] text-white/50 ml-[990px] mt-1'>Testimonials</h3>
-        <h3 className='text-[14px] text-white/50 ml-[1445px] mt-[-50px]'>Testimonials</h3>
+      ))}
+    </motion.div>
+  </motion.div>
+</div>
+
   </section>
   {/*(contact Content) */}
-  <section id='section9' className='h-[1230px] bg-[rgb(110,56,147)]'>
+  <section id='section9' className='h-[1000px] bg-[rgb(110,56,147)]'>
     <div>
-       <h3 className='text-[52px] uppercase font-bold leading-none ml-[80px] translate-y-[350px]'>Have something in mind?<br/>
+       <h3 className='text-[52px] uppercase font-bold leading-none ml-[80px] translate-y-[150px]'>Have something in mind?<br/>
        get in touch with us!</h3>
-       <h4 className='text-[36px] uppercase font-bold underline ml-[80px] translate-y-[360px]'>info@studiotwofour.com</h4>
+       <h4 className='text-[36px] uppercase font-bold underline ml-[80px] translate-y-[160px]'>info@studiotwofour.com</h4>
        </div>
-       <button className=" flex items-center w-[231px] h-[56px] ml-[80px] mt-[400px] gap-3 px-6 py-4 rounded-full border border-white/50 text-white  hover:border-white/20">
+       <button className=" flex items-center w-[231px] h-[56px] ml-[80px] mt-[200px] gap-3 px-6 py-4 rounded-full border border-white/50 text-white  hover:border-white/20">
             <span className="text-[16px] font-medium text-nowrap">Start to collaborate</span>
             <PlusIcon className=" w-[24px] h-[24px] text-white"/>
             </button>
@@ -413,9 +459,15 @@ const Home: React.FC = () => {
      <Image src={LogoImage} alt='logo image' />
      </div>
      <div className='grid grid-cols-3 w-[112px] h-[32px] ml-[300px] mt-[-50px]'>
-      <Image src={Vector} alt='vector image'/>
+     <a href="https://www.instagram.com/studio.twofour?igsh=MTc0eno2azY3OGducA==">
+      <Image src={Vector} alt='vector image' />
+      </a>
+      <a href="http://www.youtube.com/@studiotwofour-creativetech6620">
       <Image src={Vector1} alt='vector image'/>
+      </a>
+      <a href="https://www.facebook.com/share/16757DiYbk/?mibextid=wwXIfr">
       <Image src={Vector2} alt='vector image'/>
+      </a>
      </div>
      <h3 className='uppercase text-[14px] tracking-wide mt-[80px] ml-[80px] '><span className='text-white/50'>Design by </span>studiotwofour</h3>
   </section>
