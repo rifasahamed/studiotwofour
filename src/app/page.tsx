@@ -132,10 +132,10 @@ const Home: React.FC = () => {
           </div>
 
           {/* Right Content (Scrollable Image Section) */}
-          <div className="w-1/2 relative mt-[-60px] ml-[100px] transform translate-x-[-75px]">
+          <div className="w-[735px] relative mt-[-60px] ml-[100px] transform translate-x-[-75px]">
             <div className="w-full overflow-x-auto scroll-container whitespace-nowrap max-w-full">
               <div className="flex space-x-10">
-                <div className="relative w-[510px] max-w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
+                <div className="relative w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image"/>
                   <div className="absolute inset-0 flex items-center justify-center mt-[440px] ml-[350px]">
                     <div className="group flex items-center justify-center w-[88px] h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out hover:w-16 hover:h-16 hover:bg-white">
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
 
 {/*(featured Content) */}
 <div className="relative group transition-all duration-300 ">
-  <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(110,56,147,0.9),rgba(50,50,147,0.2))] transition-all duration-300 mt-28">
+  <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(110,56,147,0.9),rgba(50,50,147,0.2))] transition-all duration-300 mt-[-100px]">
     <div className="absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
     
       <Image src={FeatureImage} alt="Feature image" className="w-full h-full object-cover" />
@@ -349,7 +349,7 @@ const Home: React.FC = () => {
     </div>
   </div>
   <div className='overflow-hidden h-[100px]'>
-  <div className='grid grid-cols-4 p-8 gap-x-24 w-[1550px] border-white/30 ml-[80px] mt-[-30px]'>
+  <div className='grid grid-cols-4 p-8 gap-x-24 w-[1280px] ml-[80px] mt-[-30px]'>
       <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
       <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
       <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
