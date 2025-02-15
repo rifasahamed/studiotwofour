@@ -169,7 +169,7 @@ const Home: React.FC = () => {
         {/* Additional Section */}
         <div className="flex flex-col m-[20]">
           <div className="flex justify-between">
-            <h2 className="text-[rgb(110,56,147)] text-base text-center ml-[700px]">Watch our showreel</h2>
+            <h2 className="text-[rgb(110,56,147)] text-base ml-[700px]">Watch our showreel</h2>
             <h3 className="text-white/50 text-base text-right mr-[-30px]">1/5</h3>
           </div>
         </div>
