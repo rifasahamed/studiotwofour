@@ -376,9 +376,9 @@ const Home: React.FC = () => {
         <p className='text-[18px] ml-[800px] mt-[30px] text-white/50'>We’re not just here to meet expectations—we’re here to<br />redefine them. Let’s create a future where your brand<br />shines brighter than ever.</p>
         <button className='text-[16px] font-semibold border w-[160px] h-[56px] border-white/50 rounded-full hover:border-white/20 ml-[800px] mt-[30px]'>Read full article</button>
         <div className='border-b border-white/20 w-full ml-[80px] mt-[180px]'></div>
-        <div>
-          <TestimonialsSlide />
-        </div>
+
+        <TestimonialsSlide />
+
       </section>
       {/*(contact Content) */}
       <section id='section9' className='h-[1000px] bg-[rgb(110,56,147)]'>
