@@ -9,17 +9,18 @@ html {
 }
 
 @layer base {
-    .nav-items {
-        @apply hover:text-[rgb(110,56,147)] duration-300;
-    }
+  .nav-items {
+    @apply hover:text-[rgb(110,56,147)] duration-300;
+  }
 }
+
 /* Global scrollbar styling */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(110, 56, 147,1);
+  background-color: rgba(110, 56, 147, 1);
   border-radius: 10px;
   border: 3px solid rgba(0, 0, 0, 0.1);
 }
@@ -35,17 +36,24 @@ html {
 
 /* Global CSS */
 body {
- 
-    -ms-overflow-style: none;
-  }
-  
- 
-  body {
-    scrollbar-width: none;
-  }
-  
 
-  body::-webkit-scrollbar {
-    display: none; 
-  }
-  
+  -ms-overflow-style: none;
+}
+
+
+body {
+  scrollbar-width: none;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
