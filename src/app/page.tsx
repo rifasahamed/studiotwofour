@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import TestimonialsSlide from '@/Assets/components/TestimonialsSlide';
+import Clientslide from '@/Assets/components/Clientslide';
 import LogoImage from '@/Assets/images/Logo.png';
 import MeetingImage from '@/Assets/images/meeting.png';
 import RoomImage from '@/Assets/images/room.jpg';
@@ -16,10 +17,6 @@ import Studio1Image from '@/Assets/images/Studio1.png';
 import Studio2Image from '@/Assets/images/Studio2.png';
 import Studio3Image from '@/Assets/images/Studio3.png';
 import ServicesImagae from '@/Assets/images/services.png';
-import MusixlabImage from '@/Assets/images/musixlab.png';
-import NorthImage from '@/Assets/images/north.png';
-import ViheImage from '@/Assets/images/vihe.png';
-import SharelocksImage from '@/Assets/images/sharelocks.png';
 import InsightImage from '@/Assets/images/insight.png';
 import Vector from '@/Assets/images/Vector.png';
 import Vector1 from '@/Assets/images/Vector1.png';
@@ -331,35 +328,14 @@ const Home: React.FC = () => {
         <h3 className='text-[216px] font-bold tracking-tighter ml-[580px] text-white'>SERVICES</h3>
       </section>
       {/*(past clients Content) */}
-      <section id='section7' className=' h-[1190px]'>
+      <section id='section7' className=' h-[1190px] overflow-hidden'>
         <div>
           <div className="relative  translate-x-[80px] translate-y-[150px] bg-[rgb(254,220,0)] size-3 rounded-full "></div>
           <div className="relative  translate-x-[100px] translate-y-[132px] text-[rgb(254,220,0)]">Past clients</div>
         </div>
         <p className='uppercase text-[56px] font-extrabold leading-[1.1] mt-[200px] ml-[80px]'>By focusing on every detail<br /> of visual design, web, and<br />app development, we craft<br />identities that connect<br />deeply and remain<br />unforgettable to audiences</p>
 
-        <div className='grid grid-cols-4 w-[1280px] p-8 gap-x-24 ml-[80px] mt-[100px]'>
-          <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30">
-            <Image src={MusixlabImage} alt='' />
-          </div>
-          <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30">
-            <Image src={NorthImage} alt='' />
-          </div>
-          <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30">
-            <Image src={ViheImage} alt='' />
-          </div>
-          <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30">
-            <Image src={SharelocksImage} alt='' />
-          </div>
-        </div>
-        <div className='overflow-hidden h-[100px]'>
-          <div className='grid grid-cols-4 p-8 gap-x-24 w-[1280px] ml-[80px] mt-[-30px]'>
-            <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
-            <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
-            <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
-            <div className="border-2 w-[302px] h-[290px] flex justify-center items-center rounded-3xl border-white/30"></div>
-          </div>
-        </div>
+        <Clientslide />
       </section>
 
       {/*(insights Content) */}
