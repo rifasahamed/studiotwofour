@@ -47,60 +47,29 @@ const Home: React.FC = () => {
 
 
       {/*(Navigation Bar) */}
-      <nav className=" top-0 left-0 w-full  flex justify-between items-center p-3 m-8">
+      <nav className="top-0 left-0 w-full flex flex-wrap justify-between items-center md:p-6 m-8">
+  <div className="md:hidden flex items-center ml-[300px]">
+    <button id="menu-btn" className="text-white border border-white/60 rounded-full px-3 py-2">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
 
-        <div className="absolute left-1/2 transform -translate-x-[74%] space-x-7 px-6 py-3 z-50">
-          <a
-            href="#section2"
-            className="nav-items text-white"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("section2")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Home
-          </a>
-          <a
-            href="#section4"
-            className="nav-items text-white"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("section4")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Work
-          </a>
+  <div id="menu" className="hidden md:flex flex-col md:flex-row md:space-x-10 w-full">
+    <div className="absolute left-1/2 transform -translate-x-[74%] md:-translate-x-[50%] space-x-3 md:space-x-7 px-4 md:px-6 py-3 z-50 flex flex-col md:flex-row">
+      <a href="#section2" className="nav-items text-white" onClick={(e) => { e.preventDefault(); document.getElementById("section2")?.scrollIntoView({ behavior: "smooth" }); }}>Home</a>
+      <a href="#section4" className="nav-items text-white" onClick={(e) => { e.preventDefault(); document.getElementById("section4")?.scrollIntoView({ behavior: "smooth" }); }}>Work</a>
+      <a href="#section5" className="nav-items text-white" onClick={(e) => { e.preventDefault(); document.getElementById("section5")?.scrollIntoView({ behavior: "smooth" }); }}>Studio</a>
+      <a href="#section9" className="nav-items text-white" onClick={(e) => { e.preventDefault(); document.getElementById("section9")?.scrollIntoView({ behavior: "smooth" }); }}>Contact</a>
+    </div>
+  </div>
 
-          <a
-            href="#section5"
-            className="nav-items text-white"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("section5")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Studio
-          </a>
-          <a
-            href="#section9"
-            className="nav-items text-white"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("section9")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Contact
-          </a>
-        </div>
-        <div className="flex items-center transform -translate-x-[30%] space-x-10 ml-auto">
-          <a href="#" className="text-white">Jakarta, ID 23:22 PM</a>
-        </div>
-        <div className="flex items-center transform -translate-x-[30%] space-x-5">
-          <a href="#" className="text-white border border-white/60 rounded-full hover:border-white/20 duration-200 px-5 py-4 ml-32">
-            Call us now
-          </a>
-        </div>
-      </nav>
+  <div className="flex items-center space-x-5 md:space-x-10 md:ml-[500px] lg:ml-[1000px]">
+    <a href="#" className="text-white hidden lg:block text-sm md:text-base">Jakarta, ID 23:22 PM</a>
+    <a href="#" className="text-white border hidden md:block lg:block border-white/60 rounded-full hover:border-white/20 duration-200 px-4 md:px-5 py-3 md:py-4">Call us now</a>
+  </div>
+</nav>
 
       {/*(hero Content) */}
       <section id='section2' className="relative flex flex-col px-20  pt-16 h-[948px]">
@@ -177,8 +146,8 @@ const Home: React.FC = () => {
       </section>
 
       {/*(featured Content) */}
-      <div className="relative group transition-all duration-300 ">
-        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-300 mt-[-100px]">
+      <div className="relative group transition-all duration-[1200ms] ">
+        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-[1200ms] mt-[-100px]">
           <div className="absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
 
             <Image src={FeatureImage} alt="Feature image" className="w-full h-full object-cover" />
