@@ -10,7 +10,7 @@ html {
 
 @layer base {
   .nav-items {
-    @apply hover:text-[rgb(110,56,147)] duration-300;
+    @apply md:hover:text-[rgb(110,56,147)] lg:hover:text-[rgb(110,56,147)] duration-300;
   }
 }
 
