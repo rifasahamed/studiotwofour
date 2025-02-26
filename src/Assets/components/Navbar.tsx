@@ -49,7 +49,7 @@ const Navbar = () =>{
 
       {/* Animated Background Menu */}
       <div
-  className={`fixed top-[100px] right-0 w-[80px] h-[80px]  bg-[rgb(110,56,147)] transition-all duration-700 ease-in-out origin-center
+  className={`fixed top-[100px] right-0 w-[80px] h-[80px]  bg-[rgb(110,56,147)] transition-all duration-1000 ease-in-out origin-center
   md:hidden z-40 
   ${menuOpen ? "scale-[25] opacity-100 rounded-[40%]" : "scale-0 opacity-0 rounded-full"}`}
 ></div>
@@ -59,12 +59,12 @@ const Navbar = () =>{
   className={`fixed text-[24px] md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[150px] lg:translate-x-[550px] top-[130px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
   md:opacity-100 md:static md:gap-7 lg:gap-7 md:bg-transparent
   ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-auto"}
-  transition-opacity duration-500`}
+  transition-opacity duration-200`}
 >
 
         <a
           href="#section2"
-          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none  ${
+          className={`nav-items text-[rgb(254,220,0)] font-medium md:text-white transition-all duration-700 ease-out md:transition-none  ${
       menuOpen ? " opacity-100  translate-y-0 delay-200" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
     }`}
           onClick={(e) => {
@@ -77,7 +77,7 @@ const Navbar = () =>{
         </a>
         <a
           href="#section4"
-          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+          className={`nav-items  text-[rgb(254,220,0)] font-medium md:text-white transition-all duration-700 ease-out md:transition-none ${
             menuOpen ? "opacity-100 translate-y-0 delay-300" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
           }`}
           onClick={(e) => {
@@ -90,7 +90,7 @@ const Navbar = () =>{
         </a>
         <a
           href="#section5"
-          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+          className={`nav-items text-[rgb(254,220,0)] font-medium md:text-white transition-all duration-700 ease-out md:transition-none ${
             menuOpen ? "opacity-100 translate-y-0 delay-500" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
           }`}
           onClick={(e) => {
@@ -103,7 +103,7 @@ const Navbar = () =>{
         </a>
         <a
           href="#section9"
-          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+          className={`nav-items text-[rgb(254,220,0)] font-medium md:text-white transition-all duration-700 ease-out md:transition-none ${
             menuOpen ? "opacity-100 translate-y-0 delay-700" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
           }`}
           onClick={(e) => {
