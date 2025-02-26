@@ -51,7 +51,7 @@ const Home: React.FC = () => {
      <Navbar/>
       {/*(hero Content) */}
       <section id='section2' className="relative flex flex-col px-20  pt-16 h-[948px]">
-        <div className="absolute top-[-50px] md:top-[-66px] left-5 md:left-[81px]">
+        <div className="absolute top-[-30px] md:top-[-66px] left-5 md:left-[81px]">
           <Image src={LogoImage} className="w-14 h-14 md:w-[117px] md:h-[117px]" alt="StudiTwoFour image" />
         </div>
 
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
               CREATIVITY WITH <br />
               TECHNOLOGY
             </h1>
-            <p className="text-[23px] pt-16 leading-[32.2px]">
+            <p className="text-[16px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px]">
               We are a creative technolab built to transform bold <br />
               ideas into impactful realities. Whether it’s building <br />
               unforgettable experiences or redefining what’s <br />
