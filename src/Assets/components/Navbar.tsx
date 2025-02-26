@@ -56,8 +56,8 @@ const Navbar = () =>{
 
       {/* Menu Items */}
       <div
-  className={`fixed text-[24px] md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[150px] lg:translate-x-[550px] top-[130px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
-  md:opacity-100 md:static md:gap-7 lg:gap-7 md:bg-transparent
+  className={`fixed text-[24px] md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[-200px] lg:translate-x-[-200px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
+  md:opacity-100 md:relative lg:relative md:gap-7 lg:gap-7 md:bg-transparent
   ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-auto"}
   transition-opacity duration-200`}
 >
