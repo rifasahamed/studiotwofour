@@ -51,17 +51,17 @@ const Home: React.FC = () => {
      <Navbar/>
       {/*(hero Content) */}
       <section id='section2' className="relative flex flex-col px-20  pt-16 h-[948px]">
-        <div className="absolute top-[-66px] left-[81px]">
-          <Image src={LogoImage} className="w-[117px] h-[117px]" alt="StudiTwoFour image" />
+        <div className="absolute top-[-50px] md:top-[-66px] left-5 md:left-[81px]">
+          <Image src={LogoImage} className="w-14 h-14 md:w-[117px] md:h-[117px]" alt="StudiTwoFour image" />
         </div>
 
-        <div className="flex items-start">
+        <div className="flex ml-[-60px] md:ml-0 lg:ml-0">
           {/* Left Content (Text) */}
-          <div className="flex-none w-1/2">
-            <h2 className="text-[34px] font-extrabold text-[rgb(110,56,147)]">
+          <div className="flex-none mt-[-30px] md:mt-0">
+            <h2 className="text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
               INSPIRE, INNOVATE, IGNITE
             </h2>
-            <h1 className="text-[61px] font-extrabold text-[rgb(255,220,0)] pt-1 leading-none">
+            <h1 className="text-[24px] md:text-[61px] font-extrabold text-[rgb(255,220,0)] pt-2 md:pt-1 leading-none">
               CRAFTING <br />
               CREATIVITY WITH <br />
               TECHNOLOGY
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Right Content (Scrollable Image Section) */}
-          <div className="w-[735px] relative mt-[-60px] ml-[100px] transform translate-x-[-75px]">
+          <div className="hidden w-[735px] relative mt-[-60px] ml-[100px] transform translate-x-[-75px]">
             <div className="w-full overflow-x-auto scroll-container whitespace-nowrap max-w-full">
               <div className="flex space-x-10">
                 <div className="relative w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
