@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 
         <div className="flex ml-[-60px] md:ml-0 lg:ml-0">
           {/* Left Content (Text) */}
-          <div className="flex-none mt-[-30px] md:mt-0">
+          <div className="flex-none md:mt-0">
             <h2 className="text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
               INSPIRE, INNOVATE, IGNITE
             </h2>
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
               CREATIVITY WITH <br />
               TECHNOLOGY
             </h1>
-            <p className="text-[16px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px]">
+            <p className="text-[14px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px]">
               We are a creative technolab built to transform bold <br />
               ideas into impactful realities. Whether it’s building <br />
               unforgettable experiences or redefining what’s <br />
