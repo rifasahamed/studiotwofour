@@ -56,7 +56,7 @@ const Navbar = () =>{
 
       {/* Menu Items */}
       <div
-  className={`fixed text-[24px] md:text-base lg:text-base left-1/2 transform -translate-x-12 md:translate-x-[150px] lg:translate-x-[550px] top-[150px] px-4 py-3 z-50 flex flex-col gap-16 md:flex md:flex-row
+  className={`fixed text-[24px] md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[150px] lg:translate-x-[550px] top-[130px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
   md:opacity-100 md:static md:gap-7 lg:gap-7 md:bg-transparent
   ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-auto"}
   transition-opacity duration-500`}
@@ -64,7 +64,9 @@ const Navbar = () =>{
 
         <a
           href="#section2"
-          className="nav-items text-[rgb(254,220,0)] md:text-white"
+          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none  ${
+      menuOpen ? " opacity-100  translate-y-0 delay-200" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
+    }`}
           onClick={(e) => {
             e.preventDefault();
             document.getElementById("section2")?.scrollIntoView({ behavior: "smooth" });
@@ -75,7 +77,9 @@ const Navbar = () =>{
         </a>
         <a
           href="#section4"
-          className="nav-items text-[rgb(254,220,0)] md:text-white"
+          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+            menuOpen ? "opacity-100 translate-y-0 delay-300" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
+          }`}
           onClick={(e) => {
             e.preventDefault();
             document.getElementById("section4")?.scrollIntoView({ behavior: "smooth" });
@@ -86,7 +90,9 @@ const Navbar = () =>{
         </a>
         <a
           href="#section5"
-          className="nav-items text-[rgb(254,220,0)] md:text-white"
+          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+            menuOpen ? "opacity-100 translate-y-0 delay-500" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
+          }`}
           onClick={(e) => {
             e.preventDefault();
             document.getElementById("section5")?.scrollIntoView({ behavior: "smooth" });
@@ -97,7 +103,9 @@ const Navbar = () =>{
         </a>
         <a
           href="#section9"
-          className="nav-items text-[rgb(254,220,0)] md:text-white"
+          className={`nav-items text-[rgb(254,220,0)] md:text-white transition-all duration-700 ease-out md:transition-none ${
+            menuOpen ? "opacity-100 translate-y-0 delay-700" : "opacity-0 md:opacity-100 translate-y-10 md:translate-y-0"
+          }`}
           onClick={(e) => {
             e.preventDefault();
             document.getElementById("section9")?.scrollIntoView({ behavior: "smooth" });

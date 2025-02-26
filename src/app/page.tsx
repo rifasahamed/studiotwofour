@@ -61,7 +61,7 @@ const Home: React.FC = () => {
             <h2 className="text-[34px] font-extrabold text-[rgb(110,56,147)]">
               INSPIRE, INNOVATE, IGNITE
             </h2>
-            <h1 className="text-[61px] font-extrabold text-[rgb(254,220,0)] pt-1 leading-none">
+            <h1 className="text-[61px] font-extrabold text-[rgb(255,220,0)] pt-1 leading-none">
               CRAFTING <br />
               CREATIVITY WITH <br />
               TECHNOLOGY
