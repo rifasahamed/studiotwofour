@@ -74,7 +74,7 @@ const Home: React.FC = () => {
               passion and precision.
             </p>
             <button className=" group flex items-center w-[150px] h-[40px] md:w-[200px] md:h-[56px] lg:w-[300px] lg:h-[56px] gap-3 px-8 py-4 rounded-full bg-[rgb(110,56,147)] text-white mt-10 lg:hover:bg-[#1D0704] lg:hover:text-[rgb(110,56,147)]">
-              <span className="text-[12px] ml-[-11px] md:ml-[-8px] lg:ml-0 text-nowrap md:text-base font-normal">Start to collaborate</span>
+              <span className="text-[13px] ml-[-15px] md:ml-[-8px] lg:ml-0 text-nowrap md:text-base font-normal">Start to collaborate</span>
               <PlusIcon className="hidden lg:flex w-6 h-6 text-[rgb(249,99,54)] ml-auto rounded-full bg-white group-hover:text-[rgb(110,56,147)] group-hover:bg-[#1D0704]" />
             </button>
           </div>
