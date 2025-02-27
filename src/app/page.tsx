@@ -48,17 +48,17 @@ const Home: React.FC = () => {
 
 
       {/*(Navigation Bar) */}
-     <Navbar/>
+       <Navbar/>
       {/*(hero Content) */}
       <section id='section2' className="relative flex flex-col px-20  pt-16 min-h-screen md:h-[948px]">
         <div className="absolute top-[-30px] md:top-[-66px] left-5 md:left-[81px]">
           <Image src={LogoImage} className="w-14 h-14 md:w-[117px] md:h-[117px]" alt="StudiTwoFour image" />
         </div>
 
-        <div className=" flex  ml-[-60px] md:ml-0 lg:ml-0">
+        <div className=" flex ml-[-60px] md:ml-0 lg:ml-0">
           {/* Left Content (Text) */}
           <div className="relative">
-            <h2 className="text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
+            <h2 className=" md:text-left text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
               INSPIRE, INNOVATE, IGNITE
             </h2>
             <h1 className="text-[24px] md:text-[61px] font-extrabold text-[rgb(255,220,0)] pt-2 md:pt-1 leading-none">
@@ -66,8 +66,8 @@ const Home: React.FC = () => {
               CREATIVITY WITH <br />
               TECHNOLOGY
             </h1>
-            <p className="text-[15px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px] m-auto">
-              We are a creative technolab built to transform bold <br />
+            <p className="text-[12px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px] whitespace-break-spaces">
+              We are a creative technolab built to transform bold<br />
               ideas into impactful realities. Whether it’s building <br />
               unforgettable experiences or redefining what’s <br />
               possible, we’re here to elevate your brand with <br />

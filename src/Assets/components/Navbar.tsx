@@ -6,7 +6,7 @@ const Navbar = () =>{
   return (
     <nav className="top-0 left-0 w-full flex justify-between items-center md:p-2 m-8 relative">
       {/* Menu Button */}
-      <div className="fixed md:hidden flex items-center z-50 ml-[300px]">
+      <div className="fixed  md:hidden flex items-center z-50 ml-[300px]">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className={`text-white  rounded-full px-2 py-2 transition-all duration-300 ${
@@ -56,9 +56,9 @@ const Navbar = () =>{
 
       {/* Menu Items */}
       <div
-  className={`fixed text-[24px] md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[-200px] lg:translate-x-[-200px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
+  className={`fixed text-[24px] mt-[700px] md:mt-0 md:text-base lg:text-base text-center left-1/2 transform -translate-x-16 md:translate-x-[-200px] lg:translate-x-[-200px] px-4 py-3 z-50 flex flex-col gap-24 md:flex md:flex-row
   md:opacity-100 md:relative lg:relative md:gap-7 lg:gap-7 md:bg-transparent
-  ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-auto"}
+  ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
   transition-opacity duration-200`}
 >
 
