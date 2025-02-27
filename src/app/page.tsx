@@ -66,7 +66,7 @@ const Home: React.FC = () => {
               CREATIVITY WITH <br />
               TECHNOLOGY
             </h1>
-            <p className="text-[12px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px] whitespace-break-spaces">
+            <p className="flex text-nowrap text-[15px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px]">
               We are a creative technolab built to transform bold<br />
               ideas into impactful realities. Whether it’s building <br />
               unforgettable experiences or redefining what’s <br />
