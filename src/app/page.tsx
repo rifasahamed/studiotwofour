@@ -6,7 +6,6 @@ import Clientslide from '@/Assets/components/Clientslide';
 import Navbar from '@/Assets/components/Navbar';
 import LogoImage from '@/Assets/images/Logo.png';
 import MeetingImage from '@/Assets/images/meeting.png';
-import RoomImage from '@/Assets/images/room.jpg';
 import FeatureImage from '@/Assets/images/feature.png';
 import Asset1Image from '@/Assets/images/asset1.png';
 import ProjectImage1 from '@/Assets/images/project1.png';
@@ -51,63 +50,64 @@ const Home: React.FC = () => {
        <Navbar/>
       {/*(hero Content) */}
       <section id='section2' className="relative flex flex-col px-20  pt-16 min-h-screen md:h-[948px]">
-        <div className="absolute top-[-30px] md:top-[-66px] left-5 md:left-[81px]">
+        <div className="absolute top-[-30px] md:top-[-66px] left-5 md:left-[50px] lg:left-[81px]">
           <Image src={LogoImage} className="w-14 h-14 md:w-[117px] md:h-[117px]" alt="StudiTwoFour image" />
         </div>
 
         <div className=" flex ml-[-60px] md:ml-0 lg:ml-0">
           {/* Left Content (Text) */}
           <div className="relative">
-            <h2 className=" md:text-left text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
+            <h2 className=" md:ml-[-30px] lg:ml-0 text-[20px] md:text-[34px] font-extrabold text-[rgb(110,56,147)]">
               INSPIRE, INNOVATE, IGNITE
             </h2>
-            <h1 className="text-[24px] md:text-[61px] font-extrabold text-[rgb(255,220,0)] pt-2 md:pt-1 leading-none">
+            <h1 className="text-[24px] md:ml-[-30px] lg:ml-0 md:text-[61px] font-extrabold text-[rgb(255,220,0)] pt-2 md:pt-1 leading-none">
               CRAFTING <br />
               CREATIVITY WITH <br />
               TECHNOLOGY
             </h1>
-            <p className="flex text-nowrap text-[15px] md:text-[23px] pt-16 leading-5 md:leading-[32.2px]">
+            <p className="flex text-nowrap w-[80%] max-w-[300px] text-[15px] md:text-[20px] lg:text-[23px] pt-16 leading-6 md:leading-[32.2px] md:ml-[-30px] lg:ml-0">
               We are a creative technolab built to transform bold<br />
               ideas into impactful realities. Whether it’s building <br />
               unforgettable experiences or redefining what’s <br />
               possible, we’re here to elevate your brand with <br />
               passion and precision.
             </p>
-            <button className=" group flex items-center w-[150px] h-[40px] md:w-[200px] md:h-[56px] lg:w-[300px] lg:h-[56px] gap-3 px-8 py-4 rounded-full bg-[rgb(110,56,147)] text-white mt-10 lg:hover:bg-[#1D0704] lg:hover:text-[rgb(110,56,147)]">
+            <button className=" group flex items-center w-[150px] h-[40px] md:w-[200px] md:h-[56px] lg:w-[300px] lg:h-[56px] gap-3 px-8 py-4 rounded-full bg-[rgb(110,56,147)] text-white mt-10 md:ml-[-30px] lg:ml-0 lg:hover:bg-[#1D0704] lg:hover:text-[rgb(110,56,147)]">
               <span className="text-[13px] ml-[-15px] md:ml-[-8px] lg:ml-0 text-nowrap md:text-base font-normal">Start to collaborate</span>
               <PlusIcon className="hidden lg:flex w-6 h-6 text-[rgb(249,99,54)] ml-auto rounded-full bg-white group-hover:text-[rgb(110,56,147)] group-hover:bg-[#1D0704]" />
             </button>
           </div>
 
           {/* Right Content (Scrollable Image Section) */}
-          <div className="hidden w-[735px] relative mt-[-60px] ml-[100px] transform translate-x-[-75px]">
+          
+          <div className=" w-[735px] relative mt-[430px] md:mt-[-60px] lg:mt-[-60px] ml-[100px] transform translate-x-[-400px] md:translate-x-[-75px]">
             <div className="w-full overflow-x-auto scroll-container whitespace-nowrap max-w-full">
-              <div className="flex space-x-10">
-                <div className="relative w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
+              <div className="flex space-x-6 md:space-x-10">
+                <div className="relative w-[300px] md:w-[510px] lg:w-[510px] h-[300px] md:h-[600px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
-                  <div className="absolute inset-0 flex items-center justify-center mt-[440px] ml-[350px]">
-                    <div className="group flex items-center justify-center w-[88px] h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out hover:w-16 hover:h-16 hover:bg-white">
-                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-white group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                  <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[440px] ml-[200px] md:ml-[350px] z-50">
+                    <div className="group flex items-center justify-center w-[50px] md:w-[88px] h-[50px] md:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
-                  </div>
+                  </button>
                 </div>
 
-                <div className="relative w-[510px] max-w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
-                  <Image src={RoomImage} className="w-full h-full object-cover rounded-3xl" alt="Room Image" />
-                  <div className="absolute inset-0 flex items-center justify-center mt-[440px] ml-[350px]">
-                    <div className="group flex items-center justify-center w-[88px] h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out hover:w-16 hover:h-16 hover:bg-white">
-                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-white group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                <div className="relative w-[300px] md:w-[510px] lg:w-[510px] h-[300px] md:h-[600px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
+                  <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
+                  <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[440px] ml-[200px] md:ml-[350px] z-50">
+                    <div className="group flex items-center justify-center w-[50px] md:w-[88px] h-[50px] md:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
-                  </div>
+                  </button>
                 </div>
 
-                <div className="relative w-[510px] max-w-[510px] h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
+                <div className="relative w-[300px] md:w-[510px] lg:w-[510px] h-[300px] md:h-[600px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
-                  <div className="absolute inset-0 flex items-center justify-center mt-[440px] ml-[350px]">
-                    <div className="group flex items-center justify-center w-[88px] h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out hover:w-16 hover:h-16 hover:bg-white">
-                      <div className="w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-white group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                  <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[440px] ml-[200px] md:ml-[350px] z-50">
+                    <div className="group flex items-center justify-center w-[50px] md:w-[88px] h-[50px] md:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
