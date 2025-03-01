@@ -12,15 +12,15 @@ const TestimonialsSlide = () => {
         "Client feedback or reviews on the impact of Neuform’s innovative solutions."
     ];
 
-    // Duplicate slides for seamless animation
-    const loopSlides = [...slides, ...slides, ...slides];
+   
+    const loopSlides = [...slides, ...slides, ...slides, ...slides];
 
     const startAnimation = async () => {
         setIsHovered(true);
         await controls.start({
-            x: ["0%", "-100%"], // Moves left infinitely
+            x: ["0%", "-100%"],
             transition: {
-                duration: 25, // Adjust speed (higher = slower)
+                duration: 25,
                 ease: "linear",
                 repeat: Infinity
             }
@@ -29,7 +29,7 @@ const TestimonialsSlide = () => {
 
     const stopAnimation = () => {
         setIsHovered(false);
-        controls.stop(); // Stops exactly where it is
+        controls.stop();
     };
 
     return (

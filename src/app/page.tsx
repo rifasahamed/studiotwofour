@@ -49,7 +49,7 @@ const Home: React.FC = () => {
       {/*(Navigation Bar) */}
        <Navbar/>
       {/*(hero Content) */}
-      <section id='section2' className="relative flex flex-col px-20  pt-16 h-[1000px] md:h-[1400px] lg:h-[948px]">
+      <section id='section2' className="relative flex flex-col px-20  pt-16 h-[900px] md:h-[1400px] lg:h-[948px]">
         <div className="absolute top-[-30px] md:top-[-77px] lg:top-[-66px] left-5 md:left-[50px] lg:left-[81px]">
           <Image src={LogoImage} className="w-14 h-14 md:w-[90px] md:h-[90px] lg:w-[117px] lg:h-[117px] " alt="StudiTwoFour image" />
         </div>
@@ -115,31 +115,31 @@ const Home: React.FC = () => {
         </div>
 
         {/* Additional Section */}
-        <div className="flex flex-col m-[20]">
-          <div className="flex justify-between">
-            <h2 className="text-[rgb(110,56,147)] text-base ml-[680px]">Watch our showreel</h2>
-            <h3 className="text-white/50 text-base text-right mr-[-30px]">1/5</h3>
+        <div className="flex flex-col md:m-[20]">
+          <div className="flex justify-between mt-[30px] md:mt-[10px] lg:mt-[-100px] ml-[-740px] md:ml-[-720px] lg:ml-0">
+            <h2 className="text-[rgb(110,56,147)] text-sm md:text-base ml-[680px]">Watch our showreel</h2>
+            <h3 className="text-white/50 text-sm md:text-base mr-[-50px] md:mr-[10px] lg:mr-[-30px]">1/5</h3>
           </div>
         </div>
       </section>
 
       {/*(featured Content) */}
       <div className="relative group transition-all duration-[1200ms] ">
-        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-[1200ms] mt-[-100px]">
-          <div className="absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
+        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] md:group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-[1200ms] mt-[-100px]">
+          <div className="hidden md:block lg:block absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
 
-            <Image src={FeatureImage} alt="Feature image" className="w-full h-full object-cover" />
+            <Image src={FeatureImage} alt="Feature image" className=" w-full h-full object-cover" />
           </div>
           <div className='transform translate-x-[605px] translate-y-[140px]'>
             <Image src={Asset1Image} alt='Asset image' className='w-[593px] h-[784px]' />
           </div>
-          <div className="relative  translate-x-[1230px] translate-y-[-645px] bg-[rgb(254,220,0)] size-2.5 rounded-full"></div>
-          <div className="relative  translate-x-[1254px] translate-y-[-663px] text-[rgb(254,220,0)]">About us</div>
-          <div className='flex flex-col text-right text-[56px] font-extrabold leading-tight mt-[-530px] mr-[345px] md:mr-[200px] lg:mr-[345px]'>
-          <p className='z-50'> DREAM.</p>
-            <p className='transform translate-x-[84px]'>INNOVATE.</p>
-            <p className='transform translate-x-[12px]'>CREATE.</p></div>
-          <div className='flex flex-col text-left  transform translate-x-[989px] mt-8'>
+          <div className="relative  translate-x-[20px] translate-y-[-700px] md:translate-x-[1230px] md:translate-y-[-645px]  lg:translate-x-[1230px] lg:translate-y-[-645px] bg-[rgb(254,220,0)] size-2.5 rounded-full"></div>
+          <div className="relative  translate-x-[40px] translate-y-[-718px]  md:translate-x-[1254px] md:translate-y-[-663px] lg:translate-x-[1254px] lg:translate-y-[-663px] text-[rgb(254,220,0)]">About us</div>
+          <div className='flex flex-col items-start text-[24px] md:text-[56px] font-extrabold leading-tight mt-[-700px] md:mt-[-530px] ml-5 md:ml-[950px] lg:ml-[950px]'>
+            <p>DREAM.</p>
+            <p>INNOVATE.</p>
+            <p>CREATE.</p></div>
+          <div className='flex flex-col text-left  transform md:translate-x-[989px] mt-8'>
             <p className=' text-[18px] text-white/50'> we believe in the power of connection—<br />between ideas and audiences, between<br /> technology and creativity. We’re not just a<br /> studio; we’re a team of visionaries and makers<br /> driven by a singular purpose: to propel brands<br /> into their brightest futures.</p>
             <p className='text-[18px] text-white/50 pt-6'>We fuse strategy with imagination, crafting<br /> stories that captivate and resonate. From<br /> concept to execution, every project we<br /> undertake is a masterpiece in motion,<br /> designed to leave a lasting impact.</p>
           </div>
