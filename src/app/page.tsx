@@ -72,7 +72,7 @@ const Home: React.FC = () => {
               possible, we’re here to elevate your brand with <br />
               passion and precision.
             </p>
-            <button className=" group flex items-center w-[150px] h-[40px] md:w-[200px] md:h-[56px] lg:w-[300px] lg:h-[56px] gap-3 px-8 py-4 rounded-full bg-[rgb(110,56,147)] text-white mt-10 md:ml-[-30px] lg:ml-0 lg:hover:bg-[#1D0704] lg:hover:text-[rgb(110,56,147)]">
+            <button className=" group flex items-center w-[150px] h-[50px] md:w-[200px] md:h-[56px] lg:w-[300px] lg:h-[56px] gap-3 px-8 py-4 rounded-full bg-[rgb(110,56,147)] text-white mt-10 md:ml-[-30px] lg:ml-0 lg:hover:bg-[#1D0704] lg:hover:text-[rgb(110,56,147)]">
               <span className="text-[13px] ml-[-15px] md:ml-[-8px] lg:ml-0 text-nowrap md:text-base font-normal">Start to collaborate</span>
               <PlusIcon className="hidden lg:flex w-6 h-6 text-[rgb(249,99,54)] ml-auto rounded-full bg-white group-hover:text-[rgb(110,56,147)] group-hover:bg-[#1D0704]" />
             </button>
@@ -135,17 +135,17 @@ const Home: React.FC = () => {
           </div>
           <div className="relative  translate-x-[20px] translate-y-[-700px] md:translate-x-[1230px] md:translate-y-[-645px]  lg:translate-x-[1230px] lg:translate-y-[-645px] bg-[rgb(254,220,0)] size-2.5 rounded-full"></div>
           <div className="relative  translate-x-[40px] translate-y-[-718px]  md:translate-x-[1254px] md:translate-y-[-663px] lg:translate-x-[1254px] lg:translate-y-[-663px] text-[rgb(254,220,0)]">About us</div>
-          <div className='flex flex-col items-start text-[24px] md:text-[56px] font-extrabold leading-tight mt-[-700px] md:mt-[-530px] ml-5 md:ml-[950px] lg:ml-[950px]'>
+          <div className='flex flex-col items-start text-[30px] md:text-[56px] font-extrabold leading-tight mt-[-700px] md:mt-[-530px] ml-5 md:ml-[950px] lg:ml-[950px]'>
             <p>DREAM.</p>
             <p>INNOVATE.</p>
             <p>CREATE.</p></div>
-          <div className='flex flex-col text-left  transform md:translate-x-[989px] mt-8'>
-            <p className=' text-[18px] text-white/50'> we believe in the power of connection—<br />between ideas and audiences, between<br /> technology and creativity. We’re not just a<br /> studio; we’re a team of visionaries and makers<br /> driven by a singular purpose: to propel brands<br /> into their brightest futures.</p>
-            <p className='text-[18px] text-white/50 pt-6'>We fuse strategy with imagination, crafting<br /> stories that captivate and resonate. From<br /> concept to execution, every project we<br /> undertake is a masterpiece in motion,<br /> designed to leave a lasting impact.</p>
+          <div className='flex flex-col text-left   transform md:translate-x-[989px] ml-5 mt-8'>
+            <p className=' text-[15px] md:text-[18px] text-white/50'> we believe in the power of connection—<br />between ideas and audiences, between<br /> technology and creativity. We’re not just a<br /> studio; we’re a team of visionaries and makers<br /> driven by a singular purpose: to propel brands<br /> into their brightest futures.</p>
+            <p className='text-[15px] md:text-[18px] text-white/50 pt-6'>We fuse strategy with imagination, crafting<br /> stories that captivate and resonate. From<br /> concept to execution, every project we<br /> undertake is a masterpiece in motion,<br /> designed to leave a lasting impact.</p>
           </div>
-          <button className="flex items-center w-[219px] h-[56px] px-8 py-4 rounded-full border border-white/50 mt-10 translate-x-[990px] lg:hover:border-[rgb(110,56,147)] group">
-            <span className="text-[15px] font-semibold -translate-x-3">View more details</span>
-            <PlusIcon className="w-6 h-6 p-[2px] text-white ml-auto translate-x-4 rounded-full bg-[rgb(110,56,147)] lg:hover:text-white lg:group-hover:bg-transparent" />
+          <button className="flex items-center w-[200px] h-[50px] md:w-[219px] md:h-[56px] px-8 py-4 rounded-full border border-white/50 mt-10 ml-5 md:translate-x-[990px] lg:hover:border-[rgb(110,56,147)] group">
+            <span className="text-[13px] md:text-[15px] font-semibold -translate-x-3">View more details</span>
+            <PlusIcon className="w-5 h-5 p-[2px] md:p-[2px] text-white ml-auto translate-x-4 rounded-full bg-[rgb(110,56,147)] lg:hover:text-white lg:group-hover:bg-transparent" />
           </button>
         </section>
       </div>
