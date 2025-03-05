@@ -86,8 +86,8 @@ const Home: React.FC = () => {
                 <div className="relative w-[300px] md:w-[400px] lg:w-[510px] h-[300px] md:h-[400px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
                   <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[300px] lg:mt-[440px] ml-[200px] md:ml-[300px] lg:ml-[350px] z-50">
-                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
-                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out lg:hover:w-16 md:hover:h-16 lg:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white lg:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
                   </button>
                 </div>
@@ -95,8 +95,8 @@ const Home: React.FC = () => {
                 <div className="relative w-[300px] md:w-[400px] lg:w-[510px] h-[300px] md:h-[400px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
                   <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[300px] lg:mt-[440px] ml-[200px] md:ml-[300px] lg:ml-[350px] z-50">
-                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
-                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out lg:hover:w-16 lg:hover:h-16 lg:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white lg:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
                   </button>
                 </div>
@@ -104,8 +104,8 @@ const Home: React.FC = () => {
                 <div className="relative w-[300px] md:w-[400px] lg:w-[510px] h-[300px] md:h-[400px] lg:h-[600px] bg-gray-100 rounded-3xl shadow-lg flex-shrink-0">
                   <Image src={MeetingImage} className="w-full h-full object-cover rounded-3xl" alt="Meeting Image" />
                   <button className="absolute inset-0 flex items-center justify-center mt-[200px] md:mt-[300px] lg:mt-[440px] ml-[200px] md:ml-[300px] lg:ml-[350px] z-50">
-                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out md:hover:w-16 md:hover:h-16 md:hover:bg-white">
-                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white md:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
+                    <div className="group flex items-center justify-center w-[50px] md:w-[68px] lg:w-[88px] h-[50px] md:h-[66px] lg:h-[88px] bg-[rgb(110,56,147)] rounded-full shadow-lg transition-all duration-300 ease-in-out lg:hover:w-16 lg:hover:h-16 lg:hover:bg-white">
+                      <div className="w-0 h-0 border-t-[7px] md:border-t-[8px] border-t-transparent border-b-[7px] md:border-b-[8px] border-b-transparent border-l-[10px] md:border-l-[12px] border-l-white lg:group-hover:border-l-[rgb(110,56,147)] transition-all duration-300 ease-in-out"></div>
                     </div>
                   </button>
                 </div>
@@ -125,21 +125,21 @@ const Home: React.FC = () => {
 
       {/*(featured Content) */}
       <div className="relative group transition-all duration-[1200ms] ">
-        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] md:group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-[1200ms] mt-[-100px]">
-          <div className="hidden md:block lg:block absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
+        <section id='section3' className="relative  h-[1079px] bg-[rgb(17,5,1)] lg:group-hover:bg-[radial-gradient(circle,rgba(51,11,78,1),rgba(50,50,147,0.3))] transition-all duration-[1200ms] mt-[-100px]">
+          <div className="hidden lg:block absolute w-[650px] h-[782px] bg-gray-100 rounded-3xl shadow-lg overflow-hidden mx-auto transform translate-x-[80px] translate-y-[140px]">
 
             <Image src={FeatureImage} alt="Feature image" className=" w-full h-full object-cover" />
           </div>
-          <div className='transform translate-x-[605px] translate-y-[140px]'>
-            <Image src={Asset1Image} alt='Asset image' className='w-[593px] h-[784px]' />
+          <div className='transform translate-x-0 translate-y-[180px] lg:translate-x-[605px] lg:translate-y-[140px]'>
+            <Image src={Asset1Image} alt='Asset image' className='w-[430px] h-[584px] lg:w-[593px] lg:h-[784px]' />
           </div>
-          <div className="relative  translate-x-[20px] translate-y-[-700px] md:translate-x-[1230px] md:translate-y-[-645px]  lg:translate-x-[1230px] lg:translate-y-[-645px] bg-[rgb(254,220,0)] size-2.5 rounded-full"></div>
-          <div className="relative  translate-x-[40px] translate-y-[-718px]  md:translate-x-[1254px] md:translate-y-[-663px] lg:translate-x-[1254px] lg:translate-y-[-663px] text-[rgb(254,220,0)]">About us</div>
-          <div className='flex flex-col items-start text-[30px] md:text-[56px] font-extrabold leading-tight mt-[-700px] md:mt-[-530px] ml-5 md:ml-[950px] lg:ml-[950px]'>
+          <div className="relative  translate-x-[20px] translate-y-[-700px] md:translate-x-[55px] md:translate-y-[-482px]  lg:translate-x-[1230px] lg:translate-y-[-645px] bg-[rgb(254,220,0)] size-2.5 rounded-full"></div>
+          <div className="relative  translate-x-[40px] translate-y-[-718px]  md:translate-x-[75px] md:translate-y-[-500px] lg:translate-x-[1254px] lg:translate-y-[-663px] text-[rgb(254,220,0)]">About us</div>
+          <div className='flex flex-col items-start text-[30px] md:text-[56px] font-extrabold leading-tight mt-[-700px] md:mt-[-300px] lg:mt-[-530px] ml-5 md:ml-[250px] lg:ml-[950px]'>
             <p>DREAM.</p>
             <p>INNOVATE.</p>
             <p>CREATE.</p></div>
-          <div className='flex flex-col text-left   transform md:translate-x-[989px] ml-5 mt-8'>
+          <div className='flex flex-col text-left   transform md:translate-x-[250px] lg:translate-x-[989px] ml-5 mt-8'>
             <p className=' text-[15px] md:text-[18px] text-white/50'> we believe in the power of connection—<br />between ideas and audiences, between<br /> technology and creativity. We’re not just a<br /> studio; we’re a team of visionaries and makers<br /> driven by a singular purpose: to propel brands<br /> into their brightest futures.</p>
             <p className='text-[15px] md:text-[18px] text-white/50 pt-6'>We fuse strategy with imagination, crafting<br /> stories that captivate and resonate. From<br /> concept to execution, every project we<br /> undertake is a masterpiece in motion,<br /> designed to leave a lasting impact.</p>
           </div>
