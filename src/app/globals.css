@@ -13,7 +13,20 @@ html {
     @apply md:hover:text-[rgb(110,56,147)] lg:hover:text-[rgb(110,56,147)] duration-300;
   }
 }
+/* Allow vertical scrolling on the page */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
+/* Hide horizontal scrollbar for images */
+.scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
 /* Global scrollbar styling */
 ::-webkit-scrollbar {
   width: 12px;
